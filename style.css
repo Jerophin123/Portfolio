@@ -68,6 +68,7 @@ a:hover {
   gap: 25px;
 }
 
+
 .nav-links li a {
   color: #e6e6e6;
   font-size: 1rem;
@@ -249,4 +250,94 @@ a:hover {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablet */
+  .hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #4db8ff;
+    display: none;
+  }
+  
+  .nav-links {
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skills-grid, .projects-grid, .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .hero {
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skills-grid, .projects-grid, .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
 }
