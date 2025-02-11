@@ -17,6 +17,7 @@ body {
   min-height: 100vh;
 }
 
+
 /* Container for content */
 .main-content {
   flex: 1; /* Fills available space to push footer to bottom */
@@ -68,7 +69,6 @@ a:hover {
   gap: 25px;
 }
 
-
 .nav-links li a {
   color: #e6e6e6;
   font-size: 1rem;
@@ -102,6 +102,13 @@ a:hover {
   color: #c0c0c0; /* Softer grey */
 }
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to stack if needed */
+  justify-content: center; /* Center align */
+  gap: 10px; /* Add space between buttons */
+}
+
 .buttons .btn {
   padding: 12px 25px;
   background: #4db8ff;
@@ -109,9 +116,12 @@ a:hover {
   font-weight: 600;
   border: none;
   border-radius: 5px;
-  margin: 0 10px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  min-width: 150px; /* Ensures both buttons have a minimum width */
+  flex: 1; /* Makes the buttons evenly sized */
+  max-width: 180px; /* Prevents them from becoming too large */
 }
 
 .buttons .btn:hover {
