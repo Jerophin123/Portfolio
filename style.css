@@ -329,9 +329,14 @@ a:hover {
     font-size: 1rem;
   }
 
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    align-items: center;
+  }
+
   .buttons .btn {
-    width: 100%;
-    text-align: center;
+    width: 80%; /* Make the buttons take more width */
+    max-width: 250px; /* Limit max width */
   }
 
   .profile-image {
